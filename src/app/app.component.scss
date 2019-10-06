@@ -1,0 +1,65 @@
+$branco: #FFF;
+$nav-background: rgba(0, 0, 0, 0.548);
+$btn-hover: rgba(241, 233, 233, 0.23);
+$transparent:  rgba(255, 255, 255, 0);
+
+.main-page {
+    background-image: url("../assets/background.jpg");
+    background-position: 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    .bg-style {
+        background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0.29) 0%, rgba(0,0,0,0.73) 67%, rgba(0,0,0,1) 100%);
+        background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0.29) 0%,rgba(0,0,0,0.73) 67%,rgba(0,0,0,1) 100%);
+        background: radial-gradient(ellipse at center, rgba(0,0,0,0.29) 0%,rgba(0,0,0,0.73) 67%,rgba(0,0,0,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4a000000', endColorstr='#000000',GradientType=1 );
+        width: 100%;
+        height: 100%;;
+    }
+
+    font-family: sans-serif, Arial, Helvetica;
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $nav-background;
+        border-bottom: 1px solid $branco;
+        
+        .navbar {
+            flex-grow: 1;
+
+            li {
+
+                button {
+                    font-size: initial;
+                    background-color: $transparent;
+                    border: none;
+                    padding: 3vh;
+                    color: $branco;
+                }
+            }
+
+            li:hover {
+                background-color: $btn-hover;
+                transition: background-color 0.3s;
+            }
+        }
+
+        .icon-links {
+            font-size: 1.5rem;
+            justify-content: flex-end;
+            flex-grow: 5;
+
+            li {
+                cursor: pointer;
+                margin-right: 2vw;
+                color: $branco;
+            }
+        }
+    }
+}

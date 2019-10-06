@@ -1,0 +1,9 @@
+@keyframes opacity-load {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@mixin load($time) {
+    animation-name: opacity-load;
+    animation-duration: $time;
+}
