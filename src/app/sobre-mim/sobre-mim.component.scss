@@ -1,1 +1,28 @@
 @import "../styles/shared.scss";
+
+.container {
+    justify-content: flex-start;
+
+    .titulo {
+        display: flex;
+        align-items: center;
+        padding: 35px;
+        @include titulo;
+    }
+
+    .texto {
+        padding: 70px;
+        font-size: 1.3rem;
+        line-height: 30px;
+        text-shadow: 1px 1px 1px black;
+
+        a {
+            color: rgb(76, 113, 168);
+            text-decoration: initial;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+    }
+}

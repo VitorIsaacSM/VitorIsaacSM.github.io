@@ -3,9 +3,7 @@
 
 
 .container {
-    text-shadow: 3px 3px 3px black;
-
-    @include load(1.5s);
+    @include titulo;
 
     .nome {
         padding: 15px;
