@@ -29,6 +29,13 @@ $transparent:  rgba(255, 255, 255, 0);
         justify-content: space-between;
         background-color: $nav-background;
         border-bottom: 1px solid $branco;
+
+        .menu {
+            display: none;
+            padding: 22px;
+            color: white;
+            font-size: 1.5rem;
+        }
         
         .navbar {
             flex-grow: 1;
@@ -62,4 +69,43 @@ $transparent:  rgba(255, 255, 255, 0);
             }
         }
     }
+}
+
+@media screen and (max-width: 600px) {
+
+    .main-page .menu-holder {
+        position: absolute;
+        padding: 22px;
+        left: 0;
+        top: 0;
+        transition: left 1s;
+    }
+
+    .main-page nav .menu {
+        display: inline;
+        padding: 22px;
+    }
+
+    .main-page nav .navbar {
+        position: absolute;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        border: 1px solid white;
+        z-index: 1;
+        top: 65px;
+    }
+
+    .main-page .icon-links {
+        padding: 20px;
+    }
+}
+
+.hide-menu {
+    left: -999px;
+}
+
+.show-menu {
+    left: 0;
 }

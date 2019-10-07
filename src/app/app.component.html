@@ -1,28 +1,33 @@
 <div class="main-page">
   <div class="bg-style">
     <nav>
-      <ul class="navbar">
-        <li>
-          <button routerLink="">
-            Home
-          </button>
-        </li>
-        <li>
-          <button routerLink="/sobre">
-            Sobre mim
-          </button>
-        </li>
-        <li>
-          <button routerLink="/projetos">
-            Projetos
-          </button>
-        </li>
-        <li>
-          <button routerLink="/contato">
-            Contato
-          </button>
-        </li>
-      </ul>
+      <div class="menu-holder">
+        <div class="menu" (click)="hideMenu = !hideMenu">
+          <i class="fa fa-bars"></i>
+        </div>
+        <ul [class.hide-menu]="hideMenu" [class.show-menu]="!hideMenu" class="navbar">
+          <li>
+            <button routerLink="">
+              Home
+            </button>
+          </li>
+          <li>
+            <button routerLink="/sobre">
+              Sobre mim
+            </button>
+          </li>
+          <li>
+            <button routerLink="/projetos">
+              Projetos
+            </button>
+          </li>
+          <li>
+            <button routerLink="/contato">
+              Contato
+            </button>
+          </li>
+        </ul>
+      </div>
       <ul class="icon-links">
         <li>
           <a href="https://github.com/VitorIsaacSM" title="github">

@@ -27,3 +27,13 @@
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+    .container {
+        overflow-y: auto;
+        height: 100vh;
+    }
+    .texto {
+        margin-bottom: 100px;
+    }
+}
