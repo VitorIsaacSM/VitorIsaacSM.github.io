@@ -1,0 +1,54 @@
+@import "../../styles/shared.scss";
+@import "../../styles/animations.scss";
+
+.card {
+    display: flex;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 1px 1px 5px black;
+    background-color: rgba(83, 81, 81, 0.61);
+
+    @include card-animation(1s);
+
+    .titulo {
+        text-align: center;
+        margin-right: 2%;
+
+        img {
+            height: 180px;
+        }
+
+        p {
+            margin-top: 2%;
+        }
+    }
+
+    .spec {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        .desc {
+            line-height: 25px;
+        }
+
+        .inline-items {
+            display: flex;
+
+            .item {
+                margin-right: 10px;
+
+                .badge {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+p {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+}
+

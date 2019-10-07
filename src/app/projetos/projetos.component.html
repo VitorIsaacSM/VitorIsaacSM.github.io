@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="titulo">
+    <p>Meus Projetos</p>
+  </div>
+  <section>
+    <div class="projetos" *ngFor="let projeto of projetos">
+        <app-projeto
+        [titulo]="projeto.titulo"
+        [descricao]="projeto.descricao"
+        [websiteLink]="projeto.websiteLink"
+        [repoLink]="projeto.repoLink"
+        [utilizado]="projeto.utilizado"
+        [gif]="projeto.gif"
+        [imagem]="projeto.imagem">
+        </app-projeto>
+      </div>
+  </section>
+</div>

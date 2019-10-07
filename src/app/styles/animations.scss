@@ -7,3 +7,14 @@
     animation-name: opacity-load;
     animation-duration: $time;
 }
+
+@keyframes card-load {
+    from {transform: translate(-9999px, 0);}
+    to {transform: translate(0, 0);}
+}
+
+@mixin card-animation($time) {
+    animation-name: card-load;
+    animation-duration: $time;
+    animation-timing-function: ease-out;
+}

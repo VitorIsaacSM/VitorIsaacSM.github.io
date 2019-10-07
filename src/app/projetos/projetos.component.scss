@@ -1,0 +1,24 @@
+@import "../styles/shared.scss";
+
+.container {
+    justify-content: flex-start;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 100vw;
+    height: 92vh;
+
+    .titulo {
+        display: flex;
+        align-items: center;
+        margin-top: 65px;
+        @include titulo;
+    }
+
+    .projetos {
+        padding: 2% 5% 2% 5%;
+    }
+}
+
+section {
+    padding: 20px;
+}

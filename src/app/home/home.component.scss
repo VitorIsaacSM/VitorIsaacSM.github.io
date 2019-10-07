@@ -4,6 +4,7 @@
 
 .container {
     @include titulo;
+    min-height: 80vh;
 
     .nome {
         padding: 15px;

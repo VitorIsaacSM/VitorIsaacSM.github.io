@@ -16,3 +16,40 @@
     text-shadow: 3px 3px 3px black;
     font-size: 3rem;
 }
+
+.badge {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.badge:hover {
+    background-color: rgba(255, 255, 255, 0.295);
+}
+
+.badge-alt {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.692);
+    color: white;
+}
+
+body {
+    overflow-y: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

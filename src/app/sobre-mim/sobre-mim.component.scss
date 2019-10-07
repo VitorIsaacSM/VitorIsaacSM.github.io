@@ -6,19 +6,20 @@
     .titulo {
         display: flex;
         align-items: center;
-        padding: 35px;
+        margin-top: 65px;
         @include titulo;
     }
 
     .texto {
-        padding: 70px;
+        padding: 5%;
+
         font-size: 1.3rem;
         line-height: 30px;
         text-shadow: 1px 1px 1px black;
 
         a {
             color: rgb(76, 113, 168);
-            text-decoration: initial;
+            text-decoration: underline;
         }
 
         p {

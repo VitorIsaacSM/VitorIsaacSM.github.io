@@ -1,0 +1,36 @@
+<div class="card" 
+    (mouseenter)="changeDisplayTo(gif)"
+    (mouseleave)="changeDisplayTo(imagem)">
+  <div class="titulo">
+    <img [src]="display" [alt]="imagem" width="380">
+    <p>{{titulo}}</p>
+  </div>
+  <div class="spec">
+    <div class="desc">
+      <p>{{descricao}}</p>
+    </div>
+    <div class="inline-items">
+      <div class="item" *ngIf="repoLink">
+        <div class="badge" (click)="redirectTo(repoLink)">
+          Repositório
+        </div>
+      </div>
+      <div class="item" *ngIf="websiteLink">
+        <div class="badge" (click)="redirectTo(websiteLink)">
+          Website
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <p>O que foi utilizado:</p>
+      <div class="inline-items">
+        <div class="item" *ngFor="let item of utilizado">
+          <div class="badge-alt">
+            {{item}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
