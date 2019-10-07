@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Projeto } from '../projeto';
 
 @Component({
   selector: 'app-projeto',
@@ -7,20 +8,14 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ProjetoComponent implements OnInit {
 
-  @Input() titulo: string;
-  @Input() descricao: string;
-  @Input() websiteLink: string;
-  @Input() repoLink: string;
-  @Input() utilizado: string[];
-  @Input() gif: string;
-  @Input() imagem: string
+  @Input() projeto: Projeto;
 
-  display: string = this.gif;
+  display: string;
 
   constructor() { }
 
   ngOnInit() {
-    this.display = this.gif;
+    this.display = this.projeto.gif;
   }
 
   redirectTo(url: string) {

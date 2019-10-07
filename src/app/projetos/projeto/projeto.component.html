@@ -1,23 +1,28 @@
 <div class="card" 
-    (mouseenter)="changeDisplayTo(gif)"
-    (mouseleave)="changeDisplayTo(imagem)">
+    (mouseenter)="changeDisplayTo(projeto.gif)"
+    (mouseleave)="changeDisplayTo(projeto.imagem)">
   <div class="titulo">
-    <img [src]="display" [alt]="imagem" width="380">
-    <p>{{titulo}}</p>
+    <img [src]="display" [alt]="projeto?.imagem" width="380">
+    <p>{{projeto?.titulo}}</p>
   </div>
   <div class="spec">
     <div class="desc">
-      <p>{{descricao}}</p>
+      <p>{{projeto?.descricao}}</p>
     </div>
     <div class="inline-items">
-      <div class="item" *ngIf="repoLink">
-        <div class="badge" (click)="redirectTo(repoLink)">
+      <div class="item" *ngIf="projeto.repoLink">
+        <div class="badge" (click)="redirectTo(projeto.repoLink)">
           Repositório
         </div>
       </div>
-      <div class="item" *ngIf="websiteLink">
-        <div class="badge" (click)="redirectTo(websiteLink)">
+      <div class="item" *ngIf="projeto.websiteLink">
+        <div class="badge" (click)="redirectTo(projeto.websiteLink)">
           Website
+        </div>
+      </div>
+      <div class="item" *ngIf="projeto.download">
+        <div class="badge" (click)="redirectTo(projeto.download)">
+          Download
         </div>
       </div>
     </div>
@@ -25,7 +30,7 @@
     <div>
       <p>O que foi utilizado:</p>
       <div class="inline-items">
-        <div class="item" *ngFor="let item of utilizado">
+        <div class="item" *ngFor="let item of projeto?.utilizado">
           <div class="badge-alt">
             {{item}}
           </div>

@@ -4,15 +4,9 @@
   </div>
   <section>
     <div class="projetos" *ngFor="let projeto of projetos">
-        <app-projeto
-        [titulo]="projeto.titulo"
-        [descricao]="projeto.descricao"
-        [websiteLink]="projeto.websiteLink"
-        [repoLink]="projeto.repoLink"
-        [utilizado]="projeto.utilizado"
-        [gif]="projeto.gif"
-        [imagem]="projeto.imagem">
+        <app-projeto [projeto]="projeto">
         </app-projeto>
       </div>
   </section>
+  <small>/* Os links para os projetos podem demorar um pouco para abrir, pois estão hosteados gratuitamente no Heroku */</small>
 </div>
