@@ -39,6 +39,16 @@ body {
     overflow-y: hidden;
 }
 
+
+.card {
+    display: flex;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 1px 1px 5px black;
+    background-color: rgba(83, 81, 81, 0.61);
+}
+
 /* width */
 ::-webkit-scrollbar {
     width: 10px;

@@ -15,7 +15,7 @@ export class ProjetoComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.display = this.projeto.gif;
+    this.display = this.projeto.imagem;
   }
 
   redirectTo(url: string) {

@@ -1,9 +1,48 @@
+@import "../styles/shared.scss";
+
+.card {
+    margin-top: 65px;
+    display: flex;
+    align-items: center;
+}
+
+.texts {
+    text-align: center;
+
+    h1 {
+        margin-bottom: 50px;
+    }
+}
+
 .img-card {
     background-image: url("../../assets/myself.jpg");
     background-size: cover;
-    width: 200px;
-    height: 200px;
+    min-width: 200px;
+    min-height: 200px;
+    max-height: 200px;
     border-radius: 150px;
     border: 1px solid white;
     box-shadow: white 0px 0px 12px;
+    margin-right: 20px;
+}
+
+a {
+    border-radius: 8px;
+    border: 1px solid white;
+    padding: 20px 50px 20px 50px;
+    width: 250px;
+    max-height: 50px;
+    margin: 5px;
+
+    i {
+        padding: 10px;
+        font-size: 1.6rem;
+    }
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
 }
