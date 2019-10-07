@@ -6,11 +6,12 @@ import { Routes, RouterModule } from '@angular/router';
 import { SobreMimComponent } from './sobre-mim/sobre-mim.component';
 
 const routes: Routes = [
-  {path: '', component: HomeComponent},
+  {path: '', redirectTo: 'home', pathMatch: 'full'},
+  {path: 'home', component: HomeComponent },
   {path: 'sobre', component: SobreMimComponent},
   {path: 'projetos', component: ProjetosComponent},
   {path: 'contato', component: ContatoComponent},
-  {path: '**', component: HomeComponent},
+  {path: '**', redirectTo: 'home'},
 
 ];
 
