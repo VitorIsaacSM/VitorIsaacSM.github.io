@@ -28,6 +28,8 @@
 
         .inline-items {
             display: flex;
+            flex-wrap: wrap;
+            width: 100%;
 
             .item {
                 margin-right: 10px;
