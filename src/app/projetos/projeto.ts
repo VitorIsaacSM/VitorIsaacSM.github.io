@@ -32,7 +32,7 @@ export const MEUS_PROJETOS: Projeto[] = [
         titulo: 'Uno-project',
         websiteLink: null,
         repoLink: 'https://github.com/VitorIsaacSM/uno-project',
-        descricao: 'Um jogo de UNO por linha de comando, onde você joga contra um bot. Inicialmente um projeto da disciplina de Laboratório de Programação, eu adicionei funcionalidades extras como sequências de +2 e +4',
+        descricao: 'Um jogo de UNO por linha de comando, onde você joga contra um bot. Inicialmente um projeto da disciplina de Laboratório de Programação, porém eu adicionei funcionalidades extras como sequências de +2 e +4',
         gif: null,
         utilizado: ['C'],
         imagem: '../../assets/uno.png',
@@ -54,5 +54,11 @@ export const MEUS_PROJETOS: Projeto[] = [
         utilizado: ['Node.js', 'Express.js', 'MySQL'],
         imagem: '../../assets/antiPraga.png'
     },
-
-]
+    {
+        titulo: 'Workshop de Angular',
+        repoLink: 'https://github.com/VitorIsaacSM/workshop-angular',
+        descricao: 'Um workshop sobre angular o qual eu ministrei, que teve como objetivo passar conhecimentos básicos de uma aplicação usando o framework.',
+        utilizado: ['Angular', 'Bootstrap'],
+        imagem: '../../assets/workshop.png'
+    },
+];

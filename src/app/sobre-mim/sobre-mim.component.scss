@@ -2,6 +2,8 @@
 
 .container {
     justify-content: flex-start;
+    max-height: 92vh;
+    overflow-y: auto;
 
     .titulo {
         display: flex;
@@ -18,7 +20,7 @@
         text-shadow: 1px 1px 1px black;
 
         a {
-            color: rgb(76, 113, 168);
+            color: rgb(103, 141, 199);
             text-decoration: underline;
         }
 
