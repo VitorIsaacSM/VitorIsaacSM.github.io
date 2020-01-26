@@ -11,6 +11,15 @@ export interface Projeto {
 
 export const MEUS_PROJETOS: Projeto[] = [
     {
+        titulo: 'Photo-App',
+        websiteLink: 'https://api-photo-app.herokuapp.com',
+        repoLink: 'https://github.com/VitorIsaacSM/photo-app',
+        descricao: 'Uma rede social com o foco em fotografias, poste suas fotos, curta e comente fotos de outros usuarios.',
+        gif: 'https://media.giphy.com/media/cKyazfW6OGFd9KSArv/giphy.gif',
+        utilizado: ['Angular', 'Node.js', 'Express.js', 'Bootstrap'],
+        imagem: '../../assets/photo-app.png'
+    },
+    {
         titulo: 'Jdv-App',
         websiteLink: 'https://jdv-app.herokuapp.com/',
         repoLink: 'https://github.com/VitorIsaacSM/jdv-app',
