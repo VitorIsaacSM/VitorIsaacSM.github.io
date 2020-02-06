@@ -16,14 +16,16 @@
 
 .img-card {
     background-image: url("../../assets/myself.jpg");
+    background-position: center;
     background-size: cover;
     min-width: 200px;
     min-height: 200px;
     max-height: 200px;
     border-radius: 150px;
-    border: 1px solid white;
+    border: 1px solid #fff;
     box-shadow: white 0px 0px 12px;
     margin-right: 20px;
+    background-repeat: no-repeat;
 }
 
 a {
