@@ -38,6 +38,14 @@ export const MEUS_PROJETOS: Projeto[] = [
         imagem: '../../assets/todo.png'
     },
     {
+        titulo: 'Bubble-pop',
+        websiteLink: 'https://bubble-pop-3.firebaseapp.com/',
+        repoLink: 'https://github.com/VitorIsaacSM/Bubble-pop',
+        descricao: 'Um minigame no browser feito com a biblioteca Three.js, onde o objetivo é conseguir o maior Score estourando as bolhas sem deixar que elas alcancem o topo da tela.',
+        utilizado: ['Three.js', 'Javascript', 'HTML5', 'CSS3'],
+        imagem: '../../assets/bubble-pop.png'
+    },
+    {
         titulo: 'Uno-project',
         websiteLink: null,
         repoLink: 'https://github.com/VitorIsaacSM/uno-project',
