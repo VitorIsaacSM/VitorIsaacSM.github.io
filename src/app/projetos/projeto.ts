@@ -11,6 +11,14 @@ export interface Projeto {
 
 export const MEUS_PROJETOS: Projeto[] = [
     {
+        titulo: 'Youtube Playlist Randomizer',
+        websiteLink: 'https://ytb-playlist-randomizer.web.app',
+        repoLink: 'https://github.com/VitorIsaacSM/youtube-playlist-randomizer',
+        descricao: 'Uma aplicação web que te permite assistir/ouvir playlists do youtube em ordem aleatória sem repetir músicas que já tocaram!',
+        utilizado: ['Angular', 'Sass', 'Youtube Data API V3'],
+        imagem: '../../assets/ytb-playlist-randomizer.png'
+    },
+    {
         titulo: 'Photo-App',
         websiteLink: 'https://api-photo-app.herokuapp.com',
         repoLink: 'https://github.com/VitorIsaacSM/photo-app',
